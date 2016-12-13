@@ -1,12 +1,17 @@
 angular.module('minhasDiretivas', [])
-.directive('meuPainel', function(){
+	.directive('meuPainel', function() {
 
-	var ddo ={};
-	ddo.restric = "AE";
-	ddo.scope = {
-		titulo: '@'
-	};
-	ddo.transclude = true;
-	ddo.templateUrl = 'js/directives/meu-painel.html';
-	return ddo;
-});
+		var ddo = {};
+
+		ddo.restrict = "AE";
+        ddo.transclude = true;
+
+
+		ddo.scope = {
+            titulo: '@'
+        };
+
+        ddo.templateUrl = 'js/directives/meu-painel.html';
+
+		return ddo;
+	});
